@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="author" content="Paula Tămaș">
+  <meta name="keywords" content="fitness, clase fitness, sală de fitness, gym">
+  <meta name="description"
+    content="Sală de fitness, perfectă pentru iubitorii de mișcare, sport și un stil de viață sănătos și activ, toate aceste beneficii le aveți la BODY and MIND fitness studio">
+
+  <title>BODY and MIND fitness studio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+
+    h2 {
+      margin-left: 5px;
+      padding: 10px;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 12px;
+    }
+
+    h4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /*detalii pentru ce e in header*/
+    .logo {
+      height: 30px;
+      margin-left: 20px;
+    }
+
+    .navbar-scris {
+      margin: 10px;
+      flex-direction: row-reverse;
+    }
+
+    nav {
+      background-color: #e44f95;
+      border-bottom: 2px solid black;
+    }
+
+    .nav-link {
+      color: black;
+    }
+
+    /*carusel cu imagini*/
+    .carusel-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    /*citat despre sport*/
+    .citat {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      color: brown;
+      padding: 15px;
+    }
+
+    /*acordeon detalii*/
+    .accordion-item {
+      color: black;
+      background-color: whitesmoke;
+      border: whitesmoke;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: black;
+      background-color: rgb(227, 78, 103);
+    }
+
+
+    /*card abonamente*/
+    .row {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .ab-culoare {
+      color: rgb(223, 27, 27);
+    }
+
+    .buton-culoare {
+      color: black;
+      background-color: rgb(227, 78, 103);
+      border: solid rgb(227, 78, 103);
+    }
+
+    .buton-culoare:hover {
+      background-color: red;
+      border-color: red;
+    }
+
+    .badge {
+      background-color: red;
+      color: black;
+    }
+
+    /*clase fitness detalii*/
+    a {
+      color: rgb(219, 33, 117)
+    }
+
+    /*secțiunea de footer*/
+    footer {
+      display: flex;
+      justify-content: center;
+      border-top: 2px solid black;
+      align-content: center;
+      background-color: #e44f95;
+    }
+
+    .icon {
+      height: 50px;
+      margin: 5px;
+    }
+
+    .text-culoare {
+      color: black;
+    }
+
+    .logo-footer {
+      height: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!--navbar cu logo și meniu-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="dumbbell.png"
+            alt="imagine tip logo care este reprezentată de o gantera neagră, o greutate utilizată la sală"></a>
+        <h1>BODY and MIND fitness studio</h1>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+          aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-scris" id="mainMenu">
+
+          <ul class="nav main-menu flex-column flex-md-row">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#despre-noi">Despre Noi</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#abonamente">Abonamente</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#antrenori">Antrenori</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <!--carusel cu 5 imagini-->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="c2.jpg" class="d-block w-100"
+            alt="O femeie aflată în sala de forță, în fața unei oglinzi, la suportul de gantere. Sepregătește să ridice două greutăți">
+        </div>
+
+        <div class="carousel-item">
+          <img src="c1.jpg" class="d-block w-100"
+            alt="3 kettlebell-uri colorate, roz, albastră și verde, așezate una în spatele celeilalte pe un fundel albastru deschis.">
+        </div>
+
+        <div class="carousel-item">
+          <img src="c4.jpg" class="d-block w-100"
+            alt="Femeie care execută un exercițiu de abdomen, așezată pe o salteluță de sport albastră.">
+        </div>
+
+        <div class="carousel-item">
+          <img src="c3.jpg" class="d-block w-100"
+            alt="O femeie și un bărbat îmbrăcați în echipament de sală. Bărbatul are un prosop alb după gât, iat femeia bea dintr-o sticlă de sport. Fundelul este unul în degrade: roz, mov și albastru">
+        </div>
+
+        <div class="carousel-item">
+          <img src="c6.jpg" class="d-block w-100"
+            alt="O imagine alb-negru cu o femeie care execută o postură de yoga, așezată pe o salteluță de sport.">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+  <p class="container citat">“Singurul antrenament rău este cel care nu s-a întâmplat.”</p>
+
+  <!--Secțiunea 1, DESPRE NOI-->
+  <div class="container">
+    <div class="row">
+      <div id="despre-noi">
+        <h2>Despre Noi</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <p>BODY and MIND fitness studio este mai mult decât o sală de fitness, este locul în care
+        obiectivele devin vise
+        împlinite.
+        Aici transformăm sportul, mișcarea și meditația într-un stil de viață.
+        La BODY and MIND fitness studio vă întâmpinăm cu aparate de ultimă generație, antrenori profesioniști, dar și cu
+        multe zâmbete.
+        Sala noastră este locul perefect în care puteți îmbina antenamentele grele și solicitante de forta, cu relaxare,
+        stretching și meditație.
+      </p>
+      <p>
+        Vă așteptăm să vă bucurați împreună cu noi de cea mai complexă sală de forță din oraș, cu aparaturi moderne și
+        diverse.
+        Locațiile noastre sunt luminoase, atmosferă e caldă și plăcută, iar mediul este motivant, perfect pentru a te
+        ghida înspre a-ți atinge toate obiectivele în materie de fitness.
+        Ne dorim ca toți cei care se antrenează cu noi să beneficieze de cele mai bune condiții, într-un mediu cât mai
+        sănătos și pe o durată cât mai lungă cu putință, pentru a deveni un stil de viață.
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <!--FACILITĂȚI, acordeon-->
+
+  <h3>Facilităț:</h3>
+
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="accordion" id="acordeon">
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Zonă cu GREUTĂȚI, APARATE și ZONĂ CARDIO
+              </button>
+            </h4>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#acordeon">
+              <div class="accordion-body">
+                Avem o mulțime de aparate performante, noi și ușor de utilizat. La secțiunea greutăți cu siguranță aveți
+                de unde alege, acestea fiind variate și de ultimă generație. Te așteptăm să te antrenezi ca un
+                profesionist. Avem biciclete, benzi de alergat, eliptică și scărițe performante.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Sală pentru YOGA și CLASE FITNESS
+              </button>
+            </h4>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#acordeon">
+              <div class="accordion-body">
+                Relaxarea, meditația și stretchingul sunt esențiale pentru un stil de viață sănătos. Zona de yoga este
+                mediul perfect pentru a te relaxa după un antrenament greu și estenuant. Vă așteptăm la clasele de yoga
+                sau doar să va regăsiți liniștea și relaxarea după o zi lungă. Clasele noastre fitness sunt ideale
+                pentru cei care vor să facă mișcare, să se distreze și să transpire. Deși sunt plăcute și recreative,
+                clasele noastre îți pun în mișcare tot corpul și te ajută să te tonifiezi.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                CABINET NUTRIȚIE
+              </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#acordeon">
+              <div class="accordion-body">
+                Sportul nu este de ajuns pentru o viață sănătoasă, alimentația este însă și ea esențială. Nutriționiștii
+                noștri experți vă așteaptă să colaborați și să faceți minuni cu corpurile voastre.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h4 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                WORKSHOP-URI și CURSURI anuale
+              </button>
+            </h4>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#acordeon">
+              <div class="accordion-body">
+                Anual, organizăm cursuri și Workshop-uri dedicate sportului și stilului de viață echilibrat. Sunt
+                invitate nume mari din domeniul spotului și al nutriției, doctori, sportivi de performanță și iubitori
+                ai unei vieți sănătoase.
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Secțiunea 2, ABONAMENTE-->
+  <div class="container mt-5">
+    <div class="row mt-4">
+      <div id="abonamente">
+        <h2>Abonamente</h2>
+      </div>
+    </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4">
+
+      <div class="col col-sm-12">
+        <div class="card">
+          <img src="ab1.png" class="card-img-top"
+            alt="Reprezentare grafică a unui braț flexat musculos care ține în mână o ganteră.">
+          <div class="card-body">
+            <h3 class="ab-culoare">Abonament FULL Acces</h3>
+            <h4>180 lei / lună</h4>
+            <ul class="card-text">
+              <li>Acces nelimitet pe tot parcursul zilei și la toate clasele. </li>
+              <li>Abonament disponibil la toate locațiile B&M fitness studio.</li>
+              <li>+ 1 o sesiune cadou cu PT</li>
+            </ul>
+          </div>
+          <a href="https://i.etsystatic.com/11464137/r/il/930de3/1870890238/il_340x270.1870890238_gua9.jpg"
+            target="_blank" class=" btn btn-primary buton-culoare">Cumpără!</a>
+        </div>
+      </div>
+
+      <div class="col col-sm-12">
+        <div class="card">
+          <img src="ab2.png" class="card-img-top"
+            alt=".Reprezentare grafică a unui antrenor. Este conturat un bărbat îmbrăcat într-un tricu cu guler și un clipboard în partea dreaptă jos.">
+          <div class="card-body">
+            <h3 class="ab-culoare">Abonament FULL Acces - sesiuni cu Antrenor Personal</h3>
+            <h4>450 lei / lună</h4>
+            <ul class="card-text">
+              <li>Acces nelimitet pe tot parcursul zilei și la toate clasele. </li>
+              <li>Abonament disponibil la toate locațiile B&M fitness studio.</li>
+              <li>Sesiuni personalizate de antrenament cu unul dintre antrenorii noștri. </li>
+              <li>+ 1 ședință consultanță la nutriționist</li>
+            </ul>
+          </div>
+          <a href="https://i.etsystatic.com/11464137/r/il/930de3/1870890238/il_340x270.1870890238_gua9.jpg"
+            target="_blank" class=" btn btn-primary buton-culoare">Cumpără!</a>
+        </div>
+      </div>
+
+      <div class="col col-sm-12">
+        <div class="card">
+          <img src="ab3.png" class="card-img-top"
+            alt="Reprezentare grafică a unui premiu tip medalie broșă de agățat în piept. Are desenată o stea pe ea.">
+          <div class="card-body">
+            <h3 class="ab-culoare">Abonament FULL Acces - Pachet GOLD</h3>
+            <h4>850 lei / lună</h4>
+            <ul class="card-text">
+              <li>Acces nelimitet pe tot parcursul zilei și la toate clasele. </li>
+              <li>Abonament disponibil la toate locațiile B&M fitness studio.</li>
+              <li>Sesiuni personalizate de antrenament cu unul dintre antrenorii noștri.</li>
+              <li>Meniu personalizat și consultanță nutrițională.</li>
+            </ul>
+          </div>
+          <a href="https://i.etsystatic.com/11464137/r/il/930de3/1870890238/il_340x270.1870890238_gua9.jpg"
+            target="_blank" class=" btn btn-primary buton-culoare">Cumpără!</a>
+        </div>
+      </div>
+
+      <div class="col col-sm-12">
+        <div class="card">
+          <img src="ab4.png" class="card-img-top"
+            alt=".Reprezentare grafică a unui student cu toca de absolvire pe cap.">
+          <div class="card-body">
+            <h3 class="ab-culoare">Abonament FULL Acces - Pachet pentru Studenți</h3>
+            <h4>145 lei / lună <span class="badge">NOU</span></h4>
+            <ul class="card-text">
+              <li>Acces nelimitet pe tot parcursul zilei și la toate clasele. </li>
+              <li>Abonament disponibil la toate locațiile B&M fitness studio.</li>
+            </ul>
+          </div>
+          <a href="https://i.etsystatic.com/11464137/r/il/930de3/1870890238/il_340x270.1870890238_gua9.jpg"
+            target="_blank" class=" btn btn-primary buton-culoare">Cumpără!</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Clase fitness detalii-->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="mt-4">Clase fitness</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h4>Clase aerobic</h4>
+        <ul>
+          <li>Clasă de Zumba</li>
+          <li>Circuit Glutes</li>
+          <li>Circuit TRX</li>
+          <li>Sesiune de Stretching și Mobilitate</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h4>Clase Yoga</h4>
+        <ul>
+          <li>Yoga începători</li>
+          <li>Yoga avansați</li>
+          <li>Family Yoga</li>
+          <li>Aerial Yoga</li>
+          <li>Puppy Yoga - eveniment anual</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <a href="https://i.etsystatic.com/11464137/r/il/930de3/1870890238/il_340x270.1870890238_gua9.jpg"
+          target="_blank" type="button" class="btn btn-outline-danger">Înscrieți-vă acum!</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Secțiunea 3, ANTRENORI-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="antrenori">
+          <h2>Antrenori</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 mb-3">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <img class="rounded-circle w-100" src="w (17).jpg"
+          alt="imagine cu o femeie cu păr lung șaten, îmbrăcată într-o bluză roz">
+      </div>
+
+      <div class="col-lg-8 col-md-6 col-sm-12">
+        <h3>ANDREEA Niculescu</h3>
+        <p>
+          Sunt o persoană pozitivă, zâmbitoare, energică și iubesc tot ce e legat de fitness. Am terminat facultatea de
+          Kinetoterapie la UMF în Cluj-Napoca. Profesez în acest domeniu de mai bine de 5 ani, fac ceea ce îmi place în
+          fiecare zi și o fac cu plăcere. Sunt antrenoare de fitness din anul 2018 și m-am specializat pe partea de
+          aerobic și Zumba în urmă cu 2 ani, descoperindu-mi o nouă pasiune și anume pentru dans.
+        </p>
+
+        <p>
+          Niciodată nu este prea târziu pentru a descoperi frumusețea sportului, a mișcării și a unui stil de viață
+          sănătos. Eu sunt aici pentru a te ghida și pentru a te ajuta să îți atingi obiectivele. Haide să ne antrenăm
+          împreună și să avem rezultate excelente. Te aștept de asemenea la clasele de Zumba să dansăm și să ne distrăm,
+          dar nu în ultimul rând, să ne tonifiem corpul.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mt-4 mb-3">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <img class="rounded-circle w-100" src="m (4).jpg"
+          alt="imagine cu un bărbat cu ochelari și păr brunet, îmbrăcat într-un tricou gri">
+      </div>
+
+      <div class="col-lg-8 col-md-6 col-sm-12">
+        <h3>DACIAN Potrariu</h3>
+        <p>
+          De când sunt mic am practicat diferite sporturi: de la baschet, fotbal, tenis, până la înot și scrimă. Am fost
+          pasionat de acest domeniu și am fost mereu în continua încercare de a descoperi cât mai mlte sporturi și de a
+          încerca și diversifica ramuri sportive. Am intrat prima dată într-o sală de fitness la vârsta de 17 ani, iar
+          de atunci am știut că acesta e domeniul sportiv de care nu mă voi plictisi niciodată și pe care într-o zi voi
+          ajunge să-l practic. 2 ani mai târziu mi-am luat diploma de antrenor personal și profesez încă de atunci, de
+          mai bine de 10 ani de zile.
+        </p>
+
+        <p>
+          Sportul ne menține activi, ne face viața mai interesantă și ne transformă treptat în cea mai bună versiune a
+          nostră. Te aștept să ne antrenăm împreună și să te ajut să-ți depășești limitele.
+        </p>
+      </div>
+    </div>
+
+    <div class="row mt-4 mb-3">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <img class="rounded-circle w-100" src="w2(36).jpg"
+          alt=" imagine cu o femeie cu păr închis la culoare prins la spate într-un coc. Poarta o bluză neagră">
+      </div>
+
+      <div class="col-lg-8 col-md-6 col-sm-12">
+        <h3>MONIKA Burz</h3>
+        <p>
+          Sportul, pentru mine, însemnă trei lucruri: fericire, sănătate și stil de viață. Scopul meu este să te ajut și
+          pe tine să transformi mișcarea și sportul măcar în una dintre cele trei principii ale mele. Vreau să iau parte
+          la transformarea ta, la starea ta de bine , dar și la cât mai multe obiective atinse. Sunt nerăbdătoare să te
+          cunosc și să devenim o echipă de neînvins, aici, în sala de sport.
+        </p>
+
+        <p>
+          Sportul, pentru mine, însemnă trei lucruri: fericire, sănătate și stil de viață. Scopul meu este să te ajut și
+          pe tine să transformi mișcarea și sportul măcar în una dintre cele trei principii ale mele. Vreau să iau parte
+          la transformarea ta, la starea ta de bine , dar și la cât mai multe obiective atinse. Sunt nerăbdătoare să te
+          cunosc și să devenim o echipă de neînvins, aici, în sala de sport.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Secțiunea 4, CONTACT-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="contact">
+          <h2>Contact</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <p>Dacă ești pregătit să devi cea mai bună versiune a ta, dar totuși mai ai câteva întrebări, nu ezita să ne
+        contactezi. Suntem nerăbdători să faci parte din familia BODY and MIND fitness studio. </p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-12">
+        <h3>Locațiile noastre</h3>
+        <ul>
+          <li>IRIS, În zona Iris Retail Park, Bulevardul Muncii 41, Cluj-Napoca 400394</li>
+          <li>FLOREȘTI, Strada Cetății 214-244, Florești 407280</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <img src="timetable.png" class="w-100"
+          alt="imagine tip icon animat cu un calendar si un ceas, reprezentate colorat">
+      </div>
+
+      <div class="col-lg-5 col-md-5 col-sm-12">
+        <h3>Orar sală</h3>
+        <ul>
+          <li>Luni-Vineri: 7-22</li>
+          <li>Sâmbătă-Duminică: 9-20</li>
+        </ul>
+        <p>* Programul poate varia în zilele de sărbători</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p>Număr de telefon valabil pentru ambele locații: <a href="tel:+40700000000" target="_blank">0712345678</a></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p>
+        <p>Adresa de e-mail: <a href="mailto:bodyandmind@fitnessstudio.com"
+            target="_blank">bodyandmind@fitnessstudio.com</a></p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer class="main-footer mt-3">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <a href="index.html">
+          <img src="dumbbell.png" class="logo-footer mt-4">
+        </a>
+
+        <ul class="nav justify-content-end list-unstyled d-flex mt-4">
+          <li>
+            <a href="tel:+40700000000" target="_blank"> <img class="icon" src="telephone-call.png"
+                alt="logo tip icon cu un telefon mobil, reprezentând contactul telefonic"></a>
+          </li>
+
+          <li>
+            <a href="mailto:bodyandmind@fitnessstudio.com" target="_blank"><img class="icon" src="email.png"
+                alt="logo tip icon cu un plic, reprezentând contactul prin intermediul mail-ului"></a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/explore/tags/gym/" target="_blank"><img class="icon" src="instagram.png"
+                alt="logo tip icon, reprezentând simbolul aplicației Instagram"></a>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/8Mv5t-3MWQA?feature=shared" target="_blank"><img class="icon" src="youtube.png"
+                alt="logo tip icon, reprezentând simbolul aplicației YouTube"></a>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="text-center mt-4">
+        <div class="text-culoare pb-3">© 2023 Copyright: B&M fitness studio</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
